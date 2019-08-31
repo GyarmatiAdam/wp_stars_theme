@@ -8,9 +8,7 @@
       </div>
       <div class="sidebar-module">
         <h4>Archives</h4>
-        <ol>
-            <?php wp_get_archives( 'type=monthly' ); ?>
-        </ol>
+        <ol><?php wp_get_archives( 'type=monthly' ); ?></ol>
       </div>
       <div class="sidebar-module">
         <?php if ( is_active_sidebar( 'home_right_1' ) ) : ?>

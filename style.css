@@ -8,6 +8,8 @@ Tags: bootstrap
 
 body{
     background-color: rgb(130, 255, 136,0.5);
+    margin-right: 1%;
+    margin-left: 1%;
 }
 .wp-block-image{
     border-radius: 10px;
@@ -25,7 +27,12 @@ body{
     margin: 5px;
     color: black;
     font-weight: 700;
-    font-size: 23px;
+
+}
+.navbar li a:hover,
+.navbar li:hover{
+    color: white;
+    transform: scale(1.5);
 }
 
 #wpurl a{
@@ -57,9 +64,22 @@ body{
 .post{
     border-radius: 10px;
     border: 2px solid rgb(0, 88, 7);
+    padding: 2%;
+    background-color: rgb(0, 88, 7,0.1);
+    transition: transform .2s;
+}
+.post a{
+    color: black;
+    font-weight: 700;
+}
+.post a:hover{
+    color: white;
 }
 .avatar{
     border-radius: 50%;
     border: 2px solid rgb(0, 88, 7);
     margin: auto;
+}
+#submit{
+    background-color: darkgreen;
 }

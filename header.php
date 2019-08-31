@@ -9,8 +9,10 @@
   <meta name="author" content="">
 
   <title>WP-Stars(unofficial)</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@8.13.0/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8.13.0/dist/sweetalert2.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="<?php echo get_bloginfo( 'template_directory' );?>/style.css" rel="stylesheet">
   <?php wp_head();?>
 </head>
 
@@ -41,10 +43,10 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <nav class="navbar">
+            <nav id="nav" class="navbar">
                 <ul>
-                    <br><li><?php wp_list_pages( '&title_li=' ); ?></li>
-                    <li><?php wp_list_categories( '&title_li=' ); ?></li><br>
+                    <li><h4><?php wp_list_pages( '&title_li=' ); ?></li></h4>
+                    <li><h6><?php wp_list_categories( '&title_li=' ); ?></li></h6>
                 </ul>
             </nav> 
         </div> 
